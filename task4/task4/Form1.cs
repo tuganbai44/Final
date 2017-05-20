@@ -11,43 +11,41 @@ using System.Drawing.Drawing2D;
 
 
 namespace task4
+   
 {
     public partial class Form1 : Form
     {
-
+        int a = 0;
         Graphics g;
-        SolidBrush l;
-        Bitmap bmp;
+        static int x, y;
 
         public Form1()
         {
             InitializeComponent();
-            l = new SolidBrush(Color.Black);
-            Graphics g;
-            Bitmap bmp = new Bitmap;
-            pictureBox1 = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+            g = pictureBox1.CreateGraphics();
 
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
         }
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
+             x = e.Location.X;
+             y = e.Location.Y;
             draw();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-                
+            x++;
         }
 
         public void draw()
         {
-            g.FillEllipse(l, 15, 15, 32, 32);
-
+             g.DrawEllipse(new Pen(Color.Red), x - 15, y - 15, 30, 30);
         }
     }
 }
+
