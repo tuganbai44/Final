@@ -59,8 +59,37 @@ namespace Task2
                 {
                     b.Text = "6";
                 }
+                else if (b.Text == "6")
+                {
+                    b.Text = "7";
+                }
+
+                else if (b.Text == "7")
+                {
+                    b.Text = "8";
+                }
+
+                else if (b.Text == "8")
+                {
+                    b.Text = "9";
+                }
+
+                else if (b.Text == "9")
+                {
+                    b.Text = "10";
+                }
+
+                else if (b.Text == "10")
+                {
+                    b.Text = "11";
+                }
+                else if (b.Text == "11")
+                {
+                    b.Text = "12";
+                }
+
             }
-            if(b.Text=="2")
+            if (b.Text=="2")
             {
                 textBox1.Text = "1";
             }

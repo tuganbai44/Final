@@ -22,10 +22,11 @@ namespace task4
         public Form1()
         {
             InitializeComponent();
-            l = new SolidBrush(Color.Beige);
+            l = new SolidBrush(Color.Black);
             Graphics g;
             Bitmap bmp = new Bitmap;
-            pictureBox1 = new bmp
+            pictureBox1 = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -35,12 +36,18 @@ namespace task4
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
-            g.FillEllipse(l, 15, 15, 32, 32);
+            draw();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
                 
+        }
+
+        public void draw()
+        {
+            g.FillEllipse(l, 15, 15, 32, 32);
+
         }
     }
 }
