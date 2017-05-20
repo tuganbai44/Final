@@ -13,10 +13,7 @@ namespace Task2
     public partial class Form1 : Form
     {
 
-
-        static int l;
-        static int a = (l / 2) % 0;
-        static int c;
+        
 
         public Form1()
         {
@@ -31,6 +28,7 @@ namespace Task2
 
         private void button_click(object sender, EventArgs e)
         {
+
             Button b = (Button)sender;
             {
                 if (b.Text== "0")
@@ -62,9 +60,30 @@ namespace Task2
                     b.Text = "6";
                 }
             }
-            if(b.Text=="a")
+            if(b.Text=="2")
             {
-                c++;
+                textBox1.Text = "1";
+            }
+
+            else if (b.Text == "4")
+            {
+                textBox1.Text = "2";
+            }
+            else if (b.Text == "6")
+            {
+                textBox1.Text = "3";
+            }
+            else if (b.Text == "8")
+            {
+                textBox1.Text = "4";
+            }
+            else if (b.Text == "10")
+            {
+                textBox1.Text = "5";
+            }
+            else if (b.Text == "12")
+            {
+                textBox1.Text = "6";
             }
         }
     }
