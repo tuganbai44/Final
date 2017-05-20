@@ -17,11 +17,15 @@ namespace task4
 
         Graphics g;
         SolidBrush l;
+        Bitmap bmp;
 
         public Form1()
         {
             InitializeComponent();
             l = new SolidBrush(Color.Beige);
+            Graphics g;
+            Bitmap bmp = new Bitmap;
+            pictureBox1 = new bmp
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
