@@ -41,13 +41,15 @@ namespace task4
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            x++;
+            x+=30;
         }
 
         public void draw()
         {
-             g.DrawEllipse(new Pen(Color.Red), x - 15, y - 15, 30, 30);
+             g.DrawEllipse(new Pen(Color.Black), x - 15, y - 15, 30, 30);
         }
     }
 }
+
+
 
