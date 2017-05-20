@@ -14,8 +14,10 @@ namespace task4
    
 {
     public partial class Form1 : Form
+
+
     {
-        int a = 0;
+
         Graphics g;
         static int x, y;
 
